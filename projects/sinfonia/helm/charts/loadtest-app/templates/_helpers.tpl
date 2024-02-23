@@ -1,7 +1,7 @@
 {{/*
 Expand the name of the chart.
 */}}
-{{- define "sinfonia-apps.name" -}}
+{{- define "loadtest-app.name" -}}
 {{- default .Chart.Name .Values.nameOverride | trunc 63 | trimSuffix "-" }}
 {{- end }}
 
@@ -10,7 +10,7 @@ Create a default fully qualified app name.
 We truncate at 63 chars because some Kubernetes name fields are limited to this (by the DNS naming spec).
 If release name contains chart name it will be used as a full name.
 */}}
-{{- define "sinfonia-apps.fullname" -}}
+{{- define "loadtest-app.fullname" -}}
 {{- if .Values.fullnameOverride }}
 {{- .Values.fullnameOverride | trunc 63 | trimSuffix "-" }}
 {{- else }}
@@ -26,16 +26,16 @@ If release name contains chart name it will be used as a full name.
 {{/*
 Create chart name and version as used by the chart label.
 */}}
-{{- define "sinfonia-apps.chart" -}}
+{{- define "loadtest-app.chart" -}}
 {{- printf "%s-%s" .Chart.Name .Chart.Version | replace "+" "_" | trunc 63 | trimSuffix "-" }}
 {{- end }}
 
 {{/*
 Common labels
 */}}
-{{- define "sinfonia-apps.labels" -}}
-helm.sh/chart: {{ include "sinfonia-apps.chart" . }}
-{{ include "sinfonia-apps.selectorLabels" . }}
+{{- define "loadtest-app.labels" -}}
+helm.sh/chart: {{ include "loadtest-app.chart" . }}
+{{ include "loadtest-app.selectorLabels" . }}
 {{- if .Chart.AppVersion }}
 app.kubernetes.io/version: {{ .Chart.AppVersion | quote }}
 {{- end }}
@@ -45,17 +45,17 @@ app.kubernetes.io/managed-by: {{ .Release.Service }}
 {{/*
 Selector labels
 */}}
-{{- define "sinfonia-apps.selectorLabels" -}}
-app.kubernetes.io/name: {{ include "sinfonia-apps.name" . }}
+{{- define "loadtest-app.selectorLabels" -}}
+app.kubernetes.io/name: {{ include "loadtest-app.name" . }}
 app.kubernetes.io/instance: {{ .Release.Name }}
 {{- end }}
 
 {{/*
 Create the name of the service account to use
 */}}
-{{- define "sinfonia-apps.serviceAccountName" -}}
+{{- define "loadtest-app.serviceAccountName" -}}
 {{- if .Values.serviceAccount.create }}
-{{- default (include "sinfonia-apps.fullname" .) .Values.serviceAccount.name }}
+{{- default (include "loadtest-app.fullname" .) .Values.serviceAccount.name }}
 {{- else }}
 {{- default "default" .Values.serviceAccount.name }}
 {{- end }}
