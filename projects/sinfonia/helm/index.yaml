@@ -1,14 +1,14 @@
 apiVersion: v1
 entries:
-  loadtest:
+  sinfonia-apps:
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2024-02-23T14:41:17.174057-05:00"
+    created: "2024-02-23T15:54:20.364835-05:00"
     description: A Helm chart for Kubernetes
-    digest: c80c313d68620ba8ea4f1169e1e4a8c0f59a6f3187bcfe6a95c3958013ecc569
-    name: loadtest
+    digest: 756a67fef090bca495a0dc0e621567942e78499aa9763deb86324fed5a04da5d
+    name: sinfonia-apps
     type: application
     urls:
-    - file://charts/charts/loadtest-0.1.0.tgz
+    - file://charts/sinfonia-apps-0.1.0.tgz
     version: 0.1.0
-generated: "2024-02-23T14:41:17.173146-05:00"
+generated: "2024-02-23T15:54:20.363133-05:00"
