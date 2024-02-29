@@ -40,8 +40,10 @@ securityContext: {}
   # runAsUser: 1000
 
 service:
-  type: ClusterIP
-  port: 80
+  type: NodePort
+  port: 8080        # Exposed port for inter-node connections
+  targetPort: http  # Port that service is runnin within pod
+  nodePort: 308080  # Exposed port for global (outside cluster) connections
 
 ingress:
   enabled: false
