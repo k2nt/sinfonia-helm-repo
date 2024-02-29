@@ -4,6 +4,8 @@
 SCRIPT_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" > /dev/null 2>&1 && pwd )"
 PARENT_DIR="$(dirname "$SCRIPT_DIR")"
 
+echo "Packaging Helm charts..."
+
 # Package all Helm charts in the 'charts' folder
 for chart in "$SCRIPT_DIR"/../charts/*; do
     if [ -d "$chart" ]; then
@@ -14,3 +16,11 @@ for chart in "$SCRIPT_DIR"/../charts/*; do
 done
 
 echo "All Helm charts packaged successfully!"
+
+
+echo "Rebuiding index.yaml..."
+
+# Rebuild the index.yaml file
+helm repo index .
+
+echo "Rebuiding index.yaml done!"
