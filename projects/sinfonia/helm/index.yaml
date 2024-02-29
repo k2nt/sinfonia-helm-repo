@@ -3,12 +3,12 @@ entries:
   loadtest:
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2024-02-29T15:02:46.898881-05:00"
+    created: "2024-02-29T16:04:54.087877-05:00"
     description: A Helm chart for Kubernetes
-    digest: 30d22acf341102455d364ef610638cf080e5cd7ec4f2dff4aefd0b8ef1e6be7b
+    digest: c7678910357c60a0aeb2da7d2549f3a58e901bfcb935fd1e6b4fb6ffd55aaff4
     name: loadtest
     type: application
     urls:
     - loadtest-0.1.0.tgz
     version: 0.1.0
-generated: "2024-02-29T15:02:46.898246-05:00"
+generated: "2024-02-29T16:04:54.086919-05:00"
