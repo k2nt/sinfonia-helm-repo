@@ -41,9 +41,9 @@ securityContext: {}
 
 service:
   type: NodePort
-  port: 8080        # Exposed port for inter-node connections
+  port: 8080        # Exposed port for intra-cluster (within cluster) connections
   targetPort: http  # Port that service is runnin within pod
-  nodePort: 308080  # Exposed port for global (outside cluster) connections
+  nodePort: 308080  # Exposed port for inter-cluster (outside cluster) connections
 
 ingress:
   enabled: false
@@ -76,14 +76,14 @@ resources: {}
 livenessProbe:
   httpGet:
     path: /livez
-    port: http
+    port: 8080
   initialDelaySeconds: 5
   periodSeconds: 10
   
 readinessProbe:
   httpGet:
     path: /readyz
-    port: http
+    port: 8080
   initialDelaySeconds: 5
   periodSeconds: 10
 
