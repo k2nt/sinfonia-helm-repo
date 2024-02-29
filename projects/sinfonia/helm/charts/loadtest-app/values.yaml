@@ -43,7 +43,7 @@ service:
   type: NodePort
   port: 8080        # Exposed port for intra-cluster (within cluster) connections
   targetPort: http  # Port that service is runnin within pod
-  nodePort: 308080  # Exposed port for inter-cluster (outside cluster) connections
+  nodePort: 30080   # Exposed port for inter-cluster (outside cluster) connections
 
 ingress:
   enabled: false
