@@ -1,14 +1,14 @@
 apiVersion: v1
 entries:
-  loadtest-app:
+  loadtest:
   - apiVersion: v2
-    appVersion: 0.1.0
-    created: "2024-02-29T14:20:30.34184-05:00"
-    description: A collection of loadtest applications for the Sinfonia framework
-    digest: dc26478f1e1cfc98f30517144af5c4847c56e88a4da361ee3f5a4aa35edb8fcc
-    name: loadtest-app
+    appVersion: 1.16.0
+    created: "2024-02-29T15:02:46.898881-05:00"
+    description: A Helm chart for Kubernetes
+    digest: 30d22acf341102455d364ef610638cf080e5cd7ec4f2dff4aefd0b8ef1e6be7b
+    name: loadtest
     type: application
     urls:
-    - loadtest-app-0.1.0.tgz
+    - loadtest-0.1.0.tgz
     version: 0.1.0
-generated: "2024-02-29T14:20:30.34123-05:00"
+generated: "2024-02-29T15:02:46.898246-05:00"

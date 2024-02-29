@@ -1,4 +1,4 @@
-# Default values for loadtest-app.
+# Default values for loadtest.
 # This is a YAML-formatted file.
 # Declare variables to be passed into your templates.
 
@@ -41,9 +41,9 @@ securityContext: {}
 
 service:
   type: NodePort
-  port: http        # Exposed port for intra-cluster (within cluster) connections
-  targetPort: http  # Port that service is runnin within pod
-  nodePort: 30080   # Exposed port for inter-cluster (outside cluster) connections
+  port: 80
+  targetPort: 80
+  nodePort: 30080
 
 ingress:
   enabled: false
@@ -79,7 +79,6 @@ livenessProbe:
     port: http
   initialDelaySeconds: 5
   periodSeconds: 10
-  
 readinessProbe:
   httpGet:
     path: /readyz
