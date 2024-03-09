@@ -3,12 +3,12 @@ entries:
   loadtest:
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2024-03-09T13:13:00.883687-05:00"
+    created: "2024-03-09T15:18:39.326718-05:00"
     description: Loadtest application for Sinfonia
-    digest: 0266585653395d1799ef77c93639d621bc8cbc64f6762c1127ecc886c54d2cea
+    digest: cc6c21d66a714f72c24d0d5c195620c4066ecc507a3fef4980c3e65899939db9
     name: loadtest
     type: application
     urls:
     - loadtest-0.1.0.tgz
     version: 0.1.0
-generated: "2024-03-09T13:13:00.882775-05:00"
+generated: "2024-03-09T15:18:39.325221-05:00"
