@@ -2,7 +2,7 @@
 # This is a YAML-formatted file.
 # Declare variables to be passed into your templates.
 
-replicaCount: 20
+replicaCount: 18
 
 image:
   repository: k2nt/sinfonia-loadtest-app
