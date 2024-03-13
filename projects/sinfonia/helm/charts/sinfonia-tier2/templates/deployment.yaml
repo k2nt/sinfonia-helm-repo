@@ -37,8 +37,10 @@ spec:
           image: "{{ .Values.image.repository }}:{{ .Values.image.tag | default .Chart.AppVersion }}"
           imagePullPolicy: {{ .Values.image.pullPolicy }}
           env:
+            {{- if and .Values.sinfoniaRecipes }}
             - name: SINFONIA_RECIPES
-              value: {{ include "sinfonia-tier2.recipes" . }}
+              value: {{ .Values.sinfoniaRecipes }}
+            {{- end }}
             {{- if and .Values.sinfoniaTier1Url .Values.sinfoniaTier2Url }}
             - name: SINFONIA_TIER1_URL
               value: {{ .Values.sinfoniaTier1Url }}
