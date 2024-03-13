@@ -61,22 +61,22 @@ Create the name of the service account to use
 {{- end }}
 {{- end }}
 
-{{/*
-Storage location to retrieve helm charts from
-*/}}
-{{- define "sinfonia-tier2.recipes" -}}
-{{- if .Values.minio.enable -}}
-{{ default "http://minio/recipes" .Values.sinfoniaRecipes }}
-{{- else -}}
-{{ default "/RECIPES" .Values.sinfoniaRecipes }}
-{{- end -}}
-{{- end }}
+# {{/*
+# Storage location to retrieve helm charts from
+# */}}
+# {{- define "sinfonia-tier2.recipes" -}}
+# {{- if .Values.minio.enable -}}
+# {{ default "http://minio/recipes" .Values.sinfoniaRecipes }}
+# {{- else -}}
+# {{ default "/RECIPES" .Values.sinfoniaRecipes }}
+# {{- end -}}
+# {{- end }}
 
-{{/*
-Create imagePullSecret
-*/}}
-{{- define "imagePullSecret" -}}
-{{- with .Values.imageCredentials }}
-{{- printf "{\"auths\":{\"%s\":{\"username\":\"%s\",\"password\":\"%s\",\"auth\":\"%s\"}}}" .registry .username .password (printf "%s:%s" .username .password | b64enc) | b64enc }}
-{{- end }}
-{{- end }}
+# {{/*
+# Create imagePullSecret
+# */}}
+# {{- define "imagePullSecret" -}}
+# {{- with .Values.imageCredentials }}
+# {{- printf "{\"auths\":{\"%s\":{\"username\":\"%s\",\"password\":\"%s\",\"auth\":\"%s\"}}}" .registry .username .password (printf "%s:%s" .username .password | b64enc) | b64enc }}
+# {{- end }}
+# {{- end }}
