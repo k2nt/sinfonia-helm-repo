@@ -36,6 +36,15 @@ spec:
             {{- toYaml .Values.securityContext | nindent 12 }}
           image: "{{ .Values.image.repository }}:{{ .Values.image.tag | default .Chart.AppVersion }}"
           imagePullPolicy: {{ .Values.image.pullPolicy }}
+          env:
+            - name: SINFONIA_RECIPES
+              value: {{ include "sinfonia-tier2.recipes" . }}
+            {{- if and .Values.sinfoniaTier1Url .Values.sinfoniaTier2Url }}
+            - name: SINFONIA_TIER1_URL
+              value: {{ .Values.sinfoniaTier1Url }}
+            - name: SINFONIA_TIER2_URL
+              value: {{ .Values.sinfoniaTier2Url }}
+            {{- end }}
           ports:
             - name: http
               containerPort: {{ .Values.service.port }}
