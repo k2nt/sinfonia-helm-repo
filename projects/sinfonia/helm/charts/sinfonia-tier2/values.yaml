@@ -4,9 +4,9 @@
 
 sinfoniaTier1Url: ""
 sinfoniaTier2Url: ""
-
-
-
+sinfoniaRecipes: ""
+imageCredentials: ""
+ 
 replicaCount: 1
 
 image:
