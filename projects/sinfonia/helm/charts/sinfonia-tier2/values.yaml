@@ -2,9 +2,9 @@
 # This is a YAML-formatted file.
 # Declare variables to be passed into your templates.
 
-sinfoniaTier1Url: ""
-sinfoniaTier2Url: ""
-sinfoniaRecipes: ""
+sinfoniaTier1Url: "http://localhost:5000"
+sinfoniaTier2Url: "http://localhost:5001"
+sinfoniaRecipes: "RECIPES"
 imageCredentials: ""
  
 replicaCount: 1

@@ -23,9 +23,9 @@ spec:
         {{- toYaml . | nindent 8 }}
         {{- end }}
     spec:
-      {{- with .Values.imagePullSecrets }}
+      {{- if .Values.imageCredentials }}
       imagePullSecrets:
-        {{- toYaml . | nindent 8 }}
+        - name: {{ include "sinfonia-tier2.fullname" }}-docker-registry
       {{- end }}
       serviceAccountName: {{ include "sinfonia-tier2.serviceAccountName" . }}
       securityContext:
@@ -37,10 +37,8 @@ spec:
           image: "{{ .Values.image.repository }}:{{ .Values.image.tag | default .Chart.AppVersion }}"
           imagePullPolicy: {{ .Values.image.pullPolicy }}
           env:
-            {{- if and .Values.sinfoniaRecipes }}
             - name: SINFONIA_RECIPES
-              value: {{ .Values.sinfoniaRecipes }}
-            {{- end }}
+              value: {{ include "sinfonia-tier2.recipes" . }}
             {{- if and .Values.sinfoniaTier1Url .Values.sinfoniaTier2Url }}
             - name: SINFONIA_TIER1_URL
               value: {{ .Values.sinfoniaTier1Url }}
