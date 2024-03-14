@@ -63,8 +63,8 @@ securityContext: {}
 
 service:
   type: NodePort
-  port: 5101
-  targetPort: 5101
+  port: 5001
+  targetPort: 5001
   nodePort: 30051
 
 ingress:
@@ -98,13 +98,13 @@ resources: {}
 livenessProbe:
   httpGet:
     path: api/v1/livez
-    port: 5101
+    port: 5001
   initialDelaySeconds: 5
   periodSeconds: 10
 readinessProbe:
   httpGet:
     path: api/v1/readyz
-    port: 5101
+    port: 5001
   initialDelaySeconds: 5
   periodSeconds: 10
 
