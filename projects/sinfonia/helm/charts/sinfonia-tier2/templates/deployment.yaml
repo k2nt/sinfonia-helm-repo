@@ -45,6 +45,16 @@ spec:
             - name: SINFONIA_TIER2_URL
               value: {{ .Values.sinfoniaTier2Url }}
             {{- end }}
+            {{- if and .Values.sinfoniaTier2Latitude .Values.sinfoniaTier2Longitude }}
+            - name: SINFONIA_TIER2_LATITUDE
+              value: "{{ .Values.sinfoniaTier2Latitude }}"
+            - name: SINFONIA_TIER2_LONGITUDE
+              value: "{{ .Values.sinfoniaTier2Longitude }}"
+            {{- end }}            
+            {{- if and .Values.sinfoniaTier2Zone }}
+            - name: SINFONIA_TIER2_ZONE
+              value: {{ .Values.sinfoniaTier2Zone }}
+            {{- end }} 
           ports:
             - name: http
               containerPort: {{ .Values.service.port }}

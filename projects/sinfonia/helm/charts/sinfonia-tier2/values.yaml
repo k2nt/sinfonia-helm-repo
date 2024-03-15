@@ -4,6 +4,13 @@
 
 sinfoniaTier1Url: "http://localhost:5000"
 sinfoniaTier2Url: "http://localhost:5001"
+
+sinfoniaTier2Latitude: "42.3672"
+sinfoniaTier2Longitude: "-72.5185"
+# sinfoniaTier2Latitude: "a"
+# sinfoniaTier2Longitude: "b"
+sinfoniaTier2Zone: "CA-ON"
+
 sinfoniaRecipes: "RECIPES"
 imageCredentials: ""
  
