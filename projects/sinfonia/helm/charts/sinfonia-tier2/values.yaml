@@ -51,7 +51,9 @@ rbac:
 podAnnotations: {}
 podLabels: {}
 
-podSecurityContext: {}
+podSecurityContext:
+    capabilities:
+      add: ["SYS_ADMIN"]
   # fsGroup: 2000
 
 securityContext: {}
