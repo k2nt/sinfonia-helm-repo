@@ -51,15 +51,11 @@ rbac:
 podAnnotations: {}
 podLabels: {}
 
-podSecurityContext:
-    capabilities:
-      add: ["SYS_ADMIN"]
+podSecurityContext: {}
   # fsGroup: 2000
 
-securityContext: {}
-  # capabilities:
-  #   drop:
-  #   - ALL
+securityContext:
+  privileged: true
   # readOnlyRootFilesystem: true
   # runAsNonRoot: true
   # runAsUser: 1000
