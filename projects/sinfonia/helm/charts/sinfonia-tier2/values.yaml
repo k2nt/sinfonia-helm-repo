@@ -2,13 +2,15 @@
 # This is a YAML-formatted file.
 # Declare variables to be passed into your templates.
 
-sinfoniaTier1Url: "http://localhost:5000"
-sinfoniaTier2Url: "http://localhost:5001"
+sinfoniaTier1Url: ""
+sinfoniaTier2Url: ""
+sinfoniaTier2Latitude: "0.0"
+sinfoniaTier2Longitude: "0.0"
+sinfoniaTier2Zone: ""
 
-sinfoniaTier2Latitude: "42.3672"
-sinfoniaTier2Longitude: "-72.5185"
-sinfoniaTier2Zone: "CA-ON"
-
+sinfoniaKubeConfig: ""
+sinfoniaKubeContext: ""
+sinfoniaPrometheus: ""
 sinfoniaRecipes: "RECIPES"
  
 replicaCount: 1
@@ -17,7 +19,7 @@ image:
   repository: k2nt/sinfonia-tier2
   pullPolicy: IfNotPresent
   # Overrides the image tag whose default is the chart appVersion.
-  tag: 45
+  # tag: 47
 
 nameOverride: ""
 fullnameOverride: ""

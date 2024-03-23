@@ -55,6 +55,22 @@ spec:
             - name: SINFONIA_TIER2_ZONE
               value: {{ .Values.sinfoniaTier2Zone }}
             {{- end }} 
+            {{- if and .Values.sinfoniaKubeConfig }}
+            - name: SINFONIA_KUBECONFIG
+              value: {{ .Values.sinfoniaKubeConfig}}
+            {{- end }} 
+            {{- if and .Values.sinfoniaKubeContext }}
+            - name: SINFONIA_KUBECONTEXT
+              value: {{ .Values.sinfoniaKubeContext}}
+            {{- end }} 
+            {{- if and .Values.sinfoniaPrometheus }}
+            - name: SINFONIA_PROMETHEUS
+              value: {{ .Values.sinfoniaPrometheus}}
+            {{- end }}
+            {{- if and .Values.sinfoniaRecipes }}
+            - name: SINFONIA_RECIPES
+              value: {{ .Values.sinfoniaRecipes}}
+            {{- end }}
           ports:
             - name: http
               containerPort: {{ .Values.service.port }}
