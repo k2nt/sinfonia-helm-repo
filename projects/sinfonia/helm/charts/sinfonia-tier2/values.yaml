@@ -6,6 +6,8 @@ sinfoniaTier1Url: ""
 sinfoniaTier2Url: ""
 sinfoniaTier2Latitude: "0.0"
 sinfoniaTier2Longitude: "0.0"
+sinfoniaTier3Latitude: "0.0"
+sinfoniaTier3Longitude: "0.0"
 sinfoniaTier2Zone: ""
 
 sinfoniaKubeConfig: ""

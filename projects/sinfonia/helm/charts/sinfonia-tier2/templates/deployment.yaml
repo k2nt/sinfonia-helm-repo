@@ -50,7 +50,13 @@ spec:
               value: "{{ .Values.sinfoniaTier2Latitude }}"
             - name: SINFONIA_TIER2_LONGITUDE
               value: "{{ .Values.sinfoniaTier2Longitude }}"
-            {{- end }}            
+            {{- end }}   
+            {{- if and .Values.sinfoniaTier3Latitude .Values.sinfoniaTier3Longitude }}
+            - name: SINFONIA_TIER3_LATITUDE
+              value: "{{ .Values.sinfoniaTier3Latitude }}"
+            - name: SINFONIA_TIER3_LONGITUDE
+              value: "{{ .Values.sinfoniaTier3Longitude }}"
+            {{- end }}
             {{- if and .Values.sinfoniaTier2Zone }}
             - name: SINFONIA_TIER2_ZONE
               value: {{ .Values.sinfoniaTier2Zone }}
