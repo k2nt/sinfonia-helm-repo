@@ -67,10 +67,10 @@ resources:
   # resources, such as Minikube. If you do want to specify resources, uncomment the following
   # lines, adjust them as necessary, and remove the curly braces after 'resources:'.
   limits:
-    cpu: 2
+    cpu: 3
     memory: 256Mi
   requests:
-    cpu: 1
+    cpu: 2
     memory: 128Mi
 
 livenessProbe:
@@ -88,7 +88,7 @@ readinessProbe:
 
 autoscaling:
   enabled: true
-  minReplicas: 1
+  minReplicas: 2
   maxReplicas: 30
   targetCPUUtilizationPercentage: 80
   # targetMemoryUtilizationPercentage: 80
