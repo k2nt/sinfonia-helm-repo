@@ -66,12 +66,12 @@ resources:
   # choice for the user. This also increases chances charts run on environments with little
   # resources, such as Minikube. If you do want to specify resources, uncomment the following
   # lines, adjust them as necessary, and remove the curly braces after 'resources:'.
-  # limits:
-  #   cpu: 6
-  #   memory: 128Mi
-  # requests:
-  #   cpu: 4
-  #   memory: 256Mi
+  limits:
+    cpu: 2
+    memory: 128Mi
+  requests:
+    cpu: 1
+    memory: 256Mi
 
 livenessProbe:
   httpGet:
@@ -88,7 +88,7 @@ readinessProbe:
 
 autoscaling:
   enabled: true
-  minReplicas: 20
+  minReplicas: 1
   maxReplicas: 30
   targetCPUUtilizationPercentage: 80
   # targetMemoryUtilizationPercentage: 80
