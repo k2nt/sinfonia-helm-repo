@@ -3,9 +3,9 @@ entries:
   loadtest:
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2024-04-18T15:23:17.335214-04:00"
+    created: "2024-04-18T15:31:44.693571-04:00"
     description: Loadtest application for Sinfonia
-    digest: 80bce924bb1e9f76e064ee88758a2e848d5524051c87dd37aab1eb72ec8ce280
+    digest: 17e779e7d358a0bf8b6b752dc4c5304bef7f9ada29fba45a7568903f95efa1b1
     name: loadtest
     type: application
     urls:
@@ -14,12 +14,12 @@ entries:
   sinfonia-tier2:
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2024-04-18T15:23:17.336097-04:00"
+    created: "2024-04-18T15:31:44.694353-04:00"
     description: A Helm chart for Kubernetes
-    digest: b5442df45a18d81b505f274556e0d2328f42a34cd0be0c6b0a3b0f313e0d4190
+    digest: 2ed7a4f76813dd35fd6a2aeab29739498563c859dca60620c583826194a70dd0
     name: sinfonia-tier2
     type: application
     urls:
     - sinfonia-tier2-0.1.0.tgz
     version: 0.1.0
-generated: "2024-04-18T15:23:17.332798-04:00"
+generated: "2024-04-18T15:31:44.692145-04:00"
