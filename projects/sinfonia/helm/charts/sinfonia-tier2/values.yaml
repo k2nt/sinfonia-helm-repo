@@ -14,6 +14,8 @@ sinfoniaKubeConfig: ""
 sinfoniaKubeContext: ""
 sinfoniaPrometheus: ""
 sinfoniaRecipes: "RECIPES"
+
+obelixNodeName: ""
  
 replicaCount: 1
 
