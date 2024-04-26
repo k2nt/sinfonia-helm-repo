@@ -77,7 +77,7 @@ spec:
             - name: SINFONIA_RECIPES
               value: {{ .Values.sinfoniaRecipes}}
             {{- end }}
-            {{- if and .Values.sinfoniaRecipes }}
+            {{- if and .Values.obelixNodeName }}
             - name: OBELIX_NODE_NAME
               value: {{ .Values.obelixNodeName}}
             {{- end }}
