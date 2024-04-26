@@ -15,7 +15,7 @@ sinfoniaKubeContext: ""
 sinfoniaPrometheus: ""
 sinfoniaRecipes: "RECIPES"
 
-obelixNodeName: ""
+experimentObelixNodeName: ""
  
 replicaCount: 1
 

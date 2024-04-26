@@ -77,9 +77,9 @@ spec:
             - name: SINFONIA_RECIPES
               value: {{ .Values.sinfoniaRecipes}}
             {{- end }}
-            {{- if and .Values.obelixNodeName }}
-            - name: OBELIX_NODE_NAME
-              value: {{ .Values.obelixNodeName}}
+            {{- if and .Values.experimentObelixNodeName }}
+            - name: EXPERIMENT_OBELIX_NODE_NAME
+              value: {{ .Values.experimentObelixNodeName}}
             {{- end }}
           ports:
             - name: http
