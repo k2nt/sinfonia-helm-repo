@@ -16,6 +16,7 @@ sinfoniaPrometheus: ""
 sinfoniaRecipes: "RECIPES"
 
 experimentObelixNodeName: ""
+experimentPowerMeasureMethod: "rapl"
  
 replicaCount: 1
 

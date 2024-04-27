@@ -63,23 +63,27 @@ spec:
             {{- end }} 
             {{- if and .Values.sinfoniaKubeConfig }}
             - name: SINFONIA_KUBECONFIG
-              value: {{ .Values.sinfoniaKubeConfig}}
+              value: {{ .Values.sinfoniaKubeConfig }}
             {{- end }} 
             {{- if and .Values.sinfoniaKubeContext }}
             - name: SINFONIA_KUBECONTEXT
-              value: {{ .Values.sinfoniaKubeContext}}
+              value: {{ .Values.sinfoniaKubeContext }}
             {{- end }} 
             {{- if and .Values.sinfoniaPrometheus }}
             - name: SINFONIA_PROMETHEUS
-              value: {{ .Values.sinfoniaPrometheus}}
+              value: {{ .Values.sinfoniaPrometheus }}
             {{- end }}
             {{- if and .Values.sinfoniaRecipes }}
             - name: SINFONIA_RECIPES
-              value: {{ .Values.sinfoniaRecipes}}
+              value: {{ .Values.sinfoniaRecipes }}
             {{- end }}
             {{- if and .Values.experimentObelixNodeName }}
             - name: EXPERIMENT_OBELIX_NODE_NAME
-              value: {{ .Values.experimentObelixNodeName}}
+              value: {{ .Values.experimentObelixNodeName }}
+            {{- end }}
+            {{- if and .Values.experimentPowerMeasureMethod }}
+            - name: EXPERIMENT_POWER_MEASURE_METHOD
+              value: {{ .Values.experimentPowerMeasureMethod }}
             {{- end }}
           ports:
             - name: http
