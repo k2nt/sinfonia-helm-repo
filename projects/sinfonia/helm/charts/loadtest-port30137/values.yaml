@@ -43,7 +43,7 @@ service:
   type: NodePort
   port: 5000
   targetPort: 5000
-  nodePort: 30139
+  nodePort: 30137
 
 ingress:
   enabled: false

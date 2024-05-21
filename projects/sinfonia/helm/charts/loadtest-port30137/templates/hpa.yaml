@@ -2,14 +2,14 @@
 apiVersion: autoscaling/v2
 kind: HorizontalPodAutoscaler
 metadata:
-  name: {{ include "loadtest-port30139.fullname" . }}
+  name: {{ include "loadtest-port30137.fullname" . }}
   labels:
-    {{- include "loadtest-port30139.labels" . | nindent 4 }}
+    {{- include "loadtest-port30137.labels" . | nindent 4 }}
 spec:
   scaleTargetRef:
     apiVersion: apps/v1
     kind: Deployment
-    name: {{ include "loadtest-port30139.fullname" . }}
+    name: {{ include "loadtest-port30137.fullname" . }}
   minReplicas: {{ .Values.autoscaling.minReplicas }}
   maxReplicas: {{ .Values.autoscaling.maxReplicas }}
   metrics:
