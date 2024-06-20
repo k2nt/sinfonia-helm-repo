@@ -69,8 +69,8 @@ securityContext:
 
 service:
   type: NodePort
-  port: 30051
-  targetPort: 5001
+  port: 5001
+  targetPort: 30051
   nodePort: 30051
 
 ingress:
