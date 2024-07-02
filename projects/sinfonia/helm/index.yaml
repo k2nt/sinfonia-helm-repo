@@ -1,11 +1,22 @@
 apiVersion: v1
 entries:
+  imgc-resnet50-onnx:
+  - apiVersion: v2
+    appVersion: 1.16.0
+    created: "2024-07-02T18:04:46.039128+03:00"
+    description: A Helm chart for Kubernetes
+    digest: 1656ff5e6de6cb0e6e70a3edd42e8cd4b151af11f7472c84f49721197e5f7611
+    name: imgc-resnet50-onnx
+    type: application
+    urls:
+    - imgc-resnet50-onnx-0.1.0.tgz
+    version: 0.1.0
   loadtest:
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2024-05-20T21:08:09.608797-04:00"
+    created: "2024-07-02T18:04:46.039803+03:00"
     description: Loadtest application for Sinfonia
-    digest: a452d8f1e2d713a0f0ce6cfe1c2ded281fe55570c4489f48ca2f2199fb1b841e
+    digest: 61a3f97bec5c4d742fc0d9cbccfb1798c3c3d9f8b22361328cd2b414d32e5312
     name: loadtest
     type: application
     urls:
@@ -14,9 +25,9 @@ entries:
   loadtest-port30126:
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2024-05-20T21:08:09.609273-04:00"
+    created: "2024-07-02T18:04:46.040482+03:00"
     description: A Helm chart for Kubernetes
-    digest: 9a84eead77adaf363c5f39ebec4bf3637b81175d2d296b8ccc009da997732e5e
+    digest: ab11f668ec47114e1f66dd941078d5ca14b2aa1687e02ec8c6d6c5b8f3e0037f
     name: loadtest-port30126
     type: application
     urls:
@@ -25,9 +36,9 @@ entries:
   loadtest-port30127:
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2024-05-20T21:08:09.609727-04:00"
+    created: "2024-07-02T18:04:46.041226+03:00"
     description: A Helm chart for Kubernetes
-    digest: 147b7b9b56fa067a221d516b3148542825fd413408eb2125169b70403e051037
+    digest: e89261c43a73ebfa84289268178a8c2d36d8bffa3072f8d8831d4283c3ec08bd
     name: loadtest-port30127
     type: application
     urls:
@@ -36,9 +47,9 @@ entries:
   loadtest-port30128:
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2024-05-20T21:08:09.610169-04:00"
+    created: "2024-07-02T18:04:46.041896+03:00"
     description: A Helm chart for Kubernetes
-    digest: 9bc154acb25517029741e77e4b471945f2a3d276c2d6ff6f0daa39c7ce439345
+    digest: 229a52c139b05719a60a5b9cae02edd4529468ec28bd81518a72827bd5079c5c
     name: loadtest-port30128
     type: application
     urls:
@@ -47,9 +58,9 @@ entries:
   loadtest-port30130:
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2024-05-20T21:08:09.610602-04:00"
+    created: "2024-07-02T18:04:46.042549+03:00"
     description: A Helm chart for Kubernetes
-    digest: c4735b703282f1273c0ff79149a01884fb6da0c7358aed2561d2097af1ab2538
+    digest: a5f99769308000728c49420bed1c3fc8cd341e1f6d2739db05e29a2127b4c249
     name: loadtest-port30130
     type: application
     urls:
@@ -58,23 +69,34 @@ entries:
   loadtest-port30137:
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2024-05-20T21:08:09.611047-04:00"
+    created: "2024-07-02T18:04:46.043213+03:00"
     description: A Helm chart for Kubernetes
-    digest: 6fca56374dde8b3b99d4e6a7d0f890f072fedda67d24c07dcb9b9f68b0ade017
+    digest: 62be1a93b1e51db5c610b16a21263e46a8710ae5fe38f2e661de0323cb2a5d79
     name: loadtest-port30137
     type: application
     urls:
     - loadtest-port30137-0.1.0.tgz
     version: 0.1.0
+  loadtest-port30139:
+  - apiVersion: v2
+    appVersion: 1.16.0
+    created: "2024-07-02T18:04:46.044691+03:00"
+    description: A Helm chart for Kubernetes
+    digest: 51f75e2601a70bd8b41fcfcbb3b6bd8aca58c647c533f80be7476d67c08dd9db
+    name: loadtest-port30139
+    type: application
+    urls:
+    - loadtest-port30139-0.1.0.tgz
+    version: 0.1.0
   sinfonia-tier2:
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2024-05-20T21:08:09.611576-04:00"
+    created: "2024-07-02T18:04:46.045435+03:00"
     description: A Helm chart for Kubernetes
-    digest: 021c0a9929ee72ce423bf2a6590501f53012aa95d5906a8fb4646cf1a547f838
+    digest: 74d0d6db6af5152f44407ec65b0d9647cbc0a13645aa40367ea57b7b78afd281
     name: sinfonia-tier2
     type: application
     urls:
     - sinfonia-tier2-0.1.0.tgz
     version: 0.1.0
-generated: "2024-05-20T21:08:09.607501-04:00"
+generated: "2024-07-02T18:04:46.03818+03:00"
