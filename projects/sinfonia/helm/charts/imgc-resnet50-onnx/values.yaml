@@ -43,6 +43,7 @@ securityContext:
 
 service:
   type: NodePort
+  port: 8000
   httpPort: 8000
   grpcPort: 8001
   metricsPort: 8002
