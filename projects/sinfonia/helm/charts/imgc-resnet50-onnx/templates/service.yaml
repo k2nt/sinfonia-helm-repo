@@ -7,13 +7,13 @@ metadata:
 spec:
   type: {{ .Values.service.type }}
   ports:
-    - port: {{ .Values.service.httpPort }}
+    - port: 8000
       targetPort: http
       name: http-inference-server
-    - port: {{ .Values.service.grpcPort }}
+    - port: 8001
       targetPort: grpc
       name: grpc-inference-server
-    - port: {{ .Values.service.metricsPort }}
+    - port: 8002
       targetPort: metrics
       name: metrics-inference-server
   selector:
