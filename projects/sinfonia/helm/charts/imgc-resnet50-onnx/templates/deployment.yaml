@@ -37,11 +37,11 @@ spec:
           image: "{{ .Values.image.repository }}:{{ .Values.image.tag | default .Chart.AppVersion }}"
           imagePullPolicy: {{ .Values.image.pullPolicy }}
           ports:
-            - containerPort: 8000
+            - containerPort: {{ .Values.service.httpPort }}
               name: http
-            - containerPort: 8001
+            - containerPort: {{ .Values.service.grpcPort }}
               name: grpc
-            - containerPort: 8002
+            - containerPort: {{ .Values.service.metricsPort }}
               name: metrics
           livenessProbe:
             {{- toYaml .Values.livenessProbe | nindent 12 }}
