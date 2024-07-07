@@ -9,7 +9,7 @@ image:
   pullPolicy: IfNotPresent
   tag: 24.05-py3
   modelRepositoryPath: /model_repository
-  numGpus: 0
+  numGpus: 1
 
 imagePullSecrets: []
 nameOverride: ""
