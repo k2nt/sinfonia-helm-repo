@@ -9,7 +9,6 @@ image:
   pullPolicy: IfNotPresent
   tag: 24.05-py3
   modelRepositoryPath: /model_repository
-  numGpus: 1
 
 imagePullSecrets: []
 nameOverride: ""
@@ -72,7 +71,7 @@ resources:
   limits:
     cpu: 6
     memory: 2048Mi
-    nvidia.com/gpu: 1
+    # nvidia.com/gpu: 1
   requests:
     cpu: 4
     memory: 1024Mi
