@@ -55,7 +55,7 @@ spec:
           {{- end }}
 
           # NVIDIA configuration
-          args: ["trtserver", "--model-store={{ .Values.image.modelRepositoryPath }}"]
+          args: ["tritonserver", "--model-store={{ .Values.image.modelRepositoryPath }}"]
 
       {{- with .Values.volumes }}
       volumes:
