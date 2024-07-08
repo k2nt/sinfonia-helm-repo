@@ -44,13 +44,13 @@ service:
   type: LoadBalancer
   httpPort: 8000
   httpTargetPort: http
-  httpNodePort: 30080
+  httpNodePort: 30980
   grpcPort: 8001
   grpcTargetPort: grpc
-  grpcNodePort: 30043
+  grpcNodePort: 30943
   metricsPort: 8002
   metricsTargetPort: metrics
-  metricsNodePort: 30090
+  metricsNodePort: 30990
 
 ingress:
   enabled: false
