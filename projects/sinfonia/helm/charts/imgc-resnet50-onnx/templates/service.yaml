@@ -7,14 +7,17 @@ metadata:
 spec:
   type: {{ .Values.service.type }}
   ports:
-    - port: 8000
-      targetPort: http
+    - port: {{ .Values.service.httpPort }}
+      targetPort: {{ .Values.service.httpTargetPort }}
+      nodePort: {{ .Values.service.httpNodePort }}
       name: http-inference-server
-    - port: 8001
-      targetPort: grpc
+    - port: {{ .Values.service.grpcPort }}
+      targetPort: {{ .Values.service.grpcTargetPort }}
+      nodePort: {{ .Values.service.grpcNodePort }}
       name: grpc-inference-server
-    - port: 8002
-      targetPort: metrics
+    - port: {{ .Values.service.metricsPort }}
+      targetPort: {{ .Values.service.metricsTargetPort }}
+      nodePort: {{ .Values.service.metricsNodePort }}
       name: metrics-inference-server
   selector:
     {{- include "imgc-resnet50-onnx.selectorLabels" . | nindent 4 }}

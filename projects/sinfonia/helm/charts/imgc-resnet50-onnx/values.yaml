@@ -41,11 +41,16 @@ securityContext:
   fsGroup: 1000
 
 service:
-  type: NodePort
-  port: 8000
+  type: LoadBalancer
   httpPort: 8000
+  httpTargetPort: http
+  httpNodePort: 30080
   grpcPort: 8001
+  grpcTargetPort: grpc
+  grpcNodePort: 30043
   metricsPort: 8002
+  metricsTargetPort: metrics
+  metricsNodePort: 30090
 
 ingress:
   enabled: false
