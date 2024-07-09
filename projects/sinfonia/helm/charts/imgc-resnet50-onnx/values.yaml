@@ -84,13 +84,13 @@ resources:
 livenessProbe:
   httpGet:
     path: /v2/health/live
-    port: 30980
+    port: 8000
 readinessProbe:
   initialDelaySeconds: 5
   periodSeconds: 5
   httpGet:
     path: /v2/health/ready
-    port: 30980
+    port: 8000
 
 autoscaling:
   enabled: false
