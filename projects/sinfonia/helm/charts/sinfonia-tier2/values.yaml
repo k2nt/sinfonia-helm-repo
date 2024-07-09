@@ -136,7 +136,7 @@ volumes:
 # Additional volumeMounts on the output Deployment definition.
 volumeMounts:
   - name: recipes
-    mountPath: "/RECIPES"
+    mountPath: /RECIPES
     readOnly: true
 
 nodeSelector: {}
