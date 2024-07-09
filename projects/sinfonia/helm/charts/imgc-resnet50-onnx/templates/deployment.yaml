@@ -49,18 +49,18 @@ spec:
             {{- toYaml .Values.readinessProbe | nindent 12 }}
           resources:
             {{- toYaml .Values.resources | nindent 12 }}
-          {{- with .Values.volumeMounts }}
           volumeMounts:
-            {{- toYaml . | nindent 12 }}
-          {{- end }}
-
+            - name: model-repository
+              mountPath: /model_repository
+              readOnly: true
           # Invoke Triton Inference Server
           args: ["tritonserver", "--model-store=/model_repository"]
 
-      {{- with .Values.volumes }}
       volumes:
-        {{- toYaml . | nindent 8 }}
-      {{- end }}
+        - name: model-repository
+          hostPath:
+            path: {{ .Values.image.modelRepositoryPath }}
+            type: Directory
       {{- with .Values.nodeSelector }}
       nodeSelector:
         {{- toYaml . | nindent 8 }}
