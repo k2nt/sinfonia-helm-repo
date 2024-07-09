@@ -43,14 +43,14 @@ securityContext:
 service:
   type: LoadBalancer
   httpPort: 8000
-  httpTargetPort: http
+  httpTargetPort: 8000
   httpNodePort: 30980
   grpcPort: 8001
-  grpcTargetPort: grpc
-  grpcNodePort: 30943
+  grpcTargetPort: 8001
+  grpcNodePort: 30981
   metricsPort: 8002
-  metricsTargetPort: metrics
-  metricsNodePort: 30990
+  metricsTargetPort: 8002
+  metricsNodePort: 30982
 
 ingress:
   enabled: false
@@ -83,7 +83,7 @@ resources:
 
 livenessProbe:
   httpGet:
-    path: /api/health/live
+    path: /v2/health/ready
     port: http
 readinessProbe:
   initialDelaySeconds: 5
