@@ -99,19 +99,6 @@ autoscaling:
   targetCPUUtilizationPercentage: 80
   # targetMemoryUtilizationPercentage: 80
 
-# Additional volumes on the output Deployment definition.
-volumes: 
-  - name: model-repository
-    hostPath:
-      path: /model_repository
-      type: Directory
-
-# Additional volumeMounts on the output Deployment definition.
-volumeMounts:
-  - name: model-repository
-    mountPath: /model_repository
-    readOnly: true
-
 nodeSelector: {}
 
 tolerations: []
