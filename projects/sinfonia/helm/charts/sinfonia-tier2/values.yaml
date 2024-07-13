@@ -104,13 +104,13 @@ resources: {}
 livenessProbe:
   httpGet:
     path: api/v1/livez
-    port: 30051
+    port: 5001
   initialDelaySeconds: 5
   periodSeconds: 10
 readinessProbe:
   httpGet:
     path: api/v1/readyz
-    port: 30051
+    port: 5001
   initialDelaySeconds: 5
   periodSeconds: 10
 
