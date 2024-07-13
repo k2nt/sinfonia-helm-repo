@@ -3,9 +3,9 @@ entries:
   imgc-resnet50-onnx:
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2024-07-13T15:53:48.383411+07:00"
+    created: "2024-07-13T16:36:26.479446+07:00"
     description: A Helm chart for Kubernetes
-    digest: f973039884a1f43b2b73cbd1449b7ff2e0fa7ddb9d74df563d542903195a959f
+    digest: b749a7e69bad624dad972b74bae29929132a20d20ef36eb68c3ae9298fad92eb
     name: imgc-resnet50-onnx
     type: application
     urls:
@@ -14,9 +14,9 @@ entries:
   loadtest:
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2024-07-13T15:53:48.384087+07:00"
+    created: "2024-07-13T16:36:26.48009+07:00"
     description: Loadtest application for Sinfonia
-    digest: 9f15b476eef7f1ef42320fdedd5a81641d921624b812974913fbec7876cf507a
+    digest: d58703e175a859865691b08be08c84a9790111770f76349187476932a28d4eef
     name: loadtest
     type: application
     urls:
@@ -25,9 +25,9 @@ entries:
   loadtest-port30126:
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2024-07-13T15:53:48.384757+07:00"
+    created: "2024-07-13T16:36:26.480752+07:00"
     description: A Helm chart for Kubernetes
-    digest: a78925c0c4694b29718308e213faa0f1e0f64a0c52ed6aa935e18d5217661fd3
+    digest: cc4ee9994ff3d692e65ce672141f7d35a46481bce656122af8d7effa00145b2b
     name: loadtest-port30126
     type: application
     urls:
@@ -36,9 +36,9 @@ entries:
   loadtest-port30127:
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2024-07-13T15:53:48.385401+07:00"
+    created: "2024-07-13T16:36:26.481469+07:00"
     description: A Helm chart for Kubernetes
-    digest: 5719d38beb0e82ef5d4f919d76682d3a0d444b4d73a5d4df61bfb0d4eab0b59b
+    digest: 992c72405d43138d29731831025fe20954ba133342ceed3894a722d35d7f0956
     name: loadtest-port30127
     type: application
     urls:
@@ -47,9 +47,9 @@ entries:
   loadtest-port30128:
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2024-07-13T15:53:48.38603+07:00"
+    created: "2024-07-13T16:36:26.482189+07:00"
     description: A Helm chart for Kubernetes
-    digest: 85ed27c4c313c809820e601ef55f141e4946f6d37ffbba6f8d7d822162fc0203
+    digest: 9482baba5e5c0af0af4258ad338ff667b3331e9521c2b3f736b0a278958b1b1a
     name: loadtest-port30128
     type: application
     urls:
@@ -58,9 +58,9 @@ entries:
   loadtest-port30130:
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2024-07-13T15:53:48.386664+07:00"
+    created: "2024-07-13T16:36:26.482857+07:00"
     description: A Helm chart for Kubernetes
-    digest: 7ed11f2abe8d299cbd36c29a1ff664165d29a30fe987146ec48cb6820676358b
+    digest: e3a1246b6ef51e9af3bd2b4785aa073c1eecfe0ca9f75e5c10abdefa817ca230
     name: loadtest-port30130
     type: application
     urls:
@@ -69,9 +69,9 @@ entries:
   loadtest-port30137:
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2024-07-13T15:53:48.387299+07:00"
+    created: "2024-07-13T16:36:26.483505+07:00"
     description: A Helm chart for Kubernetes
-    digest: bd3cf175fcfcedd27a16acc6f3f4de1a06443c93b673d80d92c2c7a289f92fcd
+    digest: 3612b7ba8c5ab446fe7d6a569030da094b9ff74c48d99d9fd67cdb38f1d09b6b
     name: loadtest-port30137
     type: application
     urls:
@@ -80,7 +80,7 @@ entries:
   loadtest-port30139:
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2024-07-13T15:53:48.389438+07:00"
+    created: "2024-07-13T16:36:26.484745+07:00"
     description: A Helm chart for Kubernetes
     digest: 51f75e2601a70bd8b41fcfcbb3b6bd8aca58c647c533f80be7476d67c08dd9db
     name: loadtest-port30139
@@ -91,12 +91,12 @@ entries:
   sinfonia-tier2:
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2024-07-13T15:53:48.390198+07:00"
+    created: "2024-07-13T16:36:26.485503+07:00"
     description: A Helm chart for Kubernetes
-    digest: 535a0064b1ca694939ca56311df57d334e593eef704909dd558e548fac663cd1
+    digest: 6d90d44497c94b8c50370020ac7d583c2a0c6ac78dc75200dd7601cdd9d32206
     name: sinfonia-tier2
     type: application
     urls:
     - sinfonia-tier2-0.1.0.tgz
     version: 0.1.0
-generated: "2024-07-13T15:53:48.382572+07:00"
+generated: "2024-07-13T16:36:26.478557+07:00"
