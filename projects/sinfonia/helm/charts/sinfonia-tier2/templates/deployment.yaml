@@ -37,8 +37,6 @@ spec:
           image: "{{ .Values.image.repository }}:{{ .Values.image.tag | default .Chart.AppVersion }}"
           imagePullPolicy: {{ .Values.image.pullPolicy }}
           env:
-            - name: SINFONIA_RECIPES
-              value: {{ .Values.sinfoniaRecipesMountPath }}
             {{- if and .Values.sinfoniaTier1Url .Values.sinfoniaTier2Url }}
             - name: SINFONIA_TIER1_URL
               value: {{ .Values.sinfoniaTier1Url }}
@@ -73,10 +71,8 @@ spec:
             - name: SINFONIA_PROMETHEUS
               value: {{ .Values.sinfoniaPrometheus }}
             {{- end }}
-            {{- if and .Values.sinfoniaRecipes }}
             - name: SINFONIA_RECIPES
-              value: {{ .Values.sinfoniaRecipes }}
-            {{- end }}
+              value: {{ .Values.sinfoniaRecipesMountPath }}
             {{- if and .Values.experimentObelixNodeName }}
             - name: EXPERIMENT_OBELIX_NODE_NAME
               value: {{ .Values.experimentObelixNodeName }}
