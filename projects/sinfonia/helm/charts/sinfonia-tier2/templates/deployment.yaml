@@ -97,7 +97,7 @@ spec:
             {{- toYaml .Values.resources | nindent 12 }}
           volumeMounts:
             - name: recipes
-              mountPath: /RECIPES
+              mountPath: {{ .Values.sinfoniaRecipesMountPath }}
               readOnly: true
       volumes:
         - name: recipes
