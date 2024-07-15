@@ -38,7 +38,7 @@ spec:
           imagePullPolicy: {{ .Values.image.pullPolicy }}
           env:
             - name: SINFONIA_RECIPES
-              value: {{ include "sinfonia-tier2.recipes" . }}
+              value: {{ .Values.sinfoniaRecipesMountPath }}
             {{- if and .Values.sinfoniaTier1Url .Values.sinfoniaTier2Url }}
             - name: SINFONIA_TIER1_URL
               value: {{ .Values.sinfoniaTier1Url }}
