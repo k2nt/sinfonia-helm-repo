@@ -74,12 +74,12 @@ resources:
   # resources, such as Minikube. If you do want to specify resources, uncomment the following
   # lines, adjust them as necessary, and remove the curly braces after 'resources:'.
   limits:
-    cpu: 6
-    memory: 2048Mi
+    cpu: 40
+    memory: 16384Mi
     # nvidia.com/gpu: 1
   requests:
-    cpu: 4
-    memory: 1024Mi
+    cpu: 10
+    memory: 6144Mi
 
 livenessProbe:
   httpGet:
