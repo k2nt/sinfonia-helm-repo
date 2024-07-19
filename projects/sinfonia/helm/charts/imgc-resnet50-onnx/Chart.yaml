@@ -1,6 +1,6 @@
 apiVersion: v2
 name: imgc-resnet50-onnx
-description: A Helm chart for Kubernetes
+description: NVIDIA Trition Resnet50 image classification
 
 # A chart can be either an 'application' or a 'library' chart.
 #
