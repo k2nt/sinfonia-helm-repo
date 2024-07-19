@@ -1,0 +1,15 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: "{{ include "imgc-resnet50-onnx.fullname" . }}-test-connection"
+  labels:
+    {{- include "imgc-resnet50-onnx.labels" . | nindent 4 }}
+  annotations:
+    "helm.sh/hook": test
+spec:
+  containers:
+    - name: wget
+      image: busybox
+      command: ['wget']
+      args: ['{{ include "imgc-resnet50-onnx.fullname" . }}:{{ .Values.service.port }}']
+  restartPolicy: Never
