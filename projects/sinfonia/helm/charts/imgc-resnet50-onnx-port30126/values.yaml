@@ -31,6 +31,9 @@ podLabels: {}
 podSecurityContext:
   # fsGroup: 2000
   fsGroup: 1000
+  privileged: true
+  hostPID: true
+  hostIPC: true
 
 securityContext:
   # capabilities:
