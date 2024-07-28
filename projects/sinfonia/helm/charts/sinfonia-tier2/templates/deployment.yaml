@@ -5,6 +5,11 @@ metadata:
   labels:
     {{- include "sinfonia-tier2.labels" . | nindent 4 }}
 spec:
+  {{- if .Values.runtimeClassName }}
+  runtimeClassName: {{ .Values.runtimeClassName }}
+  {{- end }}
+  replicas: {{ .Values.replicaCount }}
+  {{- end }}
   {{- if not .Values.autoscaling.enabled }}
   replicas: {{ .Values.replicaCount }}
   {{- end }}
