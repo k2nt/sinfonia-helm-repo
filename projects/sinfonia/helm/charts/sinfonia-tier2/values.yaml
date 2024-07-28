@@ -59,8 +59,6 @@ rbac:
 podAnnotations: {}
 podLabels: {}
 
-runtimeClassName: nvidia
-
 podSecurityContext:
   privileged: true
   hostPID: true
