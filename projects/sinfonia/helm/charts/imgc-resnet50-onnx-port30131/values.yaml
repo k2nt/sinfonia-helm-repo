@@ -43,7 +43,7 @@ securityContext:
   runAsUser: 1000
 
 service:
-  type: LoadBalancer
+  type: NodePort
   httpPort: 8000
   httpTargetPort: 8000
   httpNodePort: 30131

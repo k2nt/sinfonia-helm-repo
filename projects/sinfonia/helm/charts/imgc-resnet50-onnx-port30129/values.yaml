@@ -43,16 +43,16 @@ securityContext:
   runAsUser: 1000
 
 service:
-  type: LoadBalancer
+  type: NodePort
   httpPort: 8000
   httpTargetPort: 8000
-  httpNodePort: 30127
+  httpNodePort: 30129
   grpcPort: 8001
   grpcTargetPort: 8001
-  grpcNodePort: 30227
+  grpcNodePort: 30229
   metricsPort: 8002
   metricsTargetPort: 8002
-  metricsNodePort: 30327
+  metricsNodePort: 30329
 
 ingress:
   enabled: false
