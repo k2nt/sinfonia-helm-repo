@@ -14,6 +14,8 @@ imagePullSecrets: []
 nameOverride: ""
 fullnameOverride: ""
 
+runtimeClassName: nvidia
+
 serviceAccount:
   # Specifies whether a service account should be created
   create: true
@@ -31,9 +33,6 @@ podLabels: {}
 podSecurityContext:
   # fsGroup: 2000
   fsGroup: 1000
-  privileged: true
-  hostPID: true
-  hostIPC: true
 
 securityContext:
   # capabilities:
@@ -77,12 +76,12 @@ resources:
   # resources, such as Minikube. If you do want to specify resources, uncomment the following
   # lines, adjust them as necessary, and remove the curly braces after 'resources:'.
   limits:
-    cpu: 40
-    memory: 16384Mi
-    # nvidia.com/gpu: 1
-  requests:
-    cpu: 10
-    memory: 6144Mi
+    # cpu: 40
+    # memory: 16384Mi
+    nvidia.com/gpu: 1
+  # requests:
+    # cpu: 10
+    # memory: 6144Mi
 
 livenessProbe:
   httpGet:

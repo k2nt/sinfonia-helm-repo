@@ -1,5 +1,5 @@
 apiVersion: v2
-name: imgc-resnet50-onnx-port30126
+name: imgc-resnet50-onnx-port30127
 description: NVIDIA Trition Resnet50 image classification
 
 # A chart can be either an 'application' or a 'library' chart.
