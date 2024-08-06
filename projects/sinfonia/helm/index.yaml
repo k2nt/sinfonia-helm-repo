@@ -3,9 +3,9 @@ entries:
   imgc-resnet50-onnx:
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2024-08-06T20:37:40.269151+07:00"
+    created: "2024-08-06T20:49:50.782673+07:00"
     description: NVIDIA Trition Resnet50 image classification
-    digest: 2eede94fd2c4c9898cc9a87df44b9159db0da489eb53b3dad2b991263df44dd5
+    digest: cd2d28c2c42659ed82623bc26c2f5b647ec3825a16869c940fb5cf29dc489aea
     name: imgc-resnet50-onnx
     type: application
     urls:
@@ -14,31 +14,64 @@ entries:
   imgc-resnet50-onnx-port30126:
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2024-08-06T20:37:40.269648+07:00"
+    created: "2024-08-06T20:49:50.783141+07:00"
     description: NVIDIA Trition Resnet50 image classification
-    digest: 017ef81ffe259f84c0b3f4ea26e94e818e4e3b0122b7ed5b1f175744e7d78ed9
+    digest: f44af6331d5e4d4444bf22a38aabb7643415d832f1d47a129d2b1c6c47fb8c09
     name: imgc-resnet50-onnx-port30126
     type: application
     urls:
     - imgc-resnet50-onnx-port30126-0.1.0.tgz
     version: 0.1.0
-  imgc-resnet50-onnx-port30127:
+  imgc-resnet50-onnx-port30129:
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2024-08-06T20:37:40.270114+07:00"
+    created: "2024-08-06T20:49:50.783587+07:00"
     description: NVIDIA Trition Resnet50 image classification
-    digest: ffb698120318422f7e8f47424fb7c6ec3c3cbd85b31e874b5f49f48b05c2e54e
-    name: imgc-resnet50-onnx-port30127
+    digest: 73f4f55968c74543b66b5023848bd91b655b9f5be037b221a727daa593da2034
+    name: imgc-resnet50-onnx-port30129
     type: application
     urls:
-    - imgc-resnet50-onnx-port30127-0.1.0.tgz
+    - imgc-resnet50-onnx-port30129-0.1.0.tgz
+    version: 0.1.0
+  imgc-resnet50-onnx-port30131:
+  - apiVersion: v2
+    appVersion: 1.16.0
+    created: "2024-08-06T20:49:50.784023+07:00"
+    description: NVIDIA Trition Resnet50 image classification
+    digest: f214fdb69e56e27be7ce46f6bb66ca77cc909a0b733d46a22714fd57a9c4773d
+    name: imgc-resnet50-onnx-port30131
+    type: application
+    urls:
+    - imgc-resnet50-onnx-port30131-0.1.0.tgz
+    version: 0.1.0
+  imgc-resnet50-onnx-port30132:
+  - apiVersion: v2
+    appVersion: 1.16.0
+    created: "2024-08-06T20:49:50.784493+07:00"
+    description: NVIDIA Trition Resnet50 image classification
+    digest: 3738fc8b69a39078ad887f7db530674de961802f44566cdaa4be5f3575ed2035
+    name: imgc-resnet50-onnx-port30132
+    type: application
+    urls:
+    - imgc-resnet50-onnx-port30132-0.1.0.tgz
+    version: 0.1.0
+  imgc-resnet50-onnx-port30137:
+  - apiVersion: v2
+    appVersion: 1.16.0
+    created: "2024-08-06T20:49:50.784945+07:00"
+    description: NVIDIA Trition Resnet50 image classification
+    digest: 4c6d0661b373123079d3c0e0e898b929f99b32dce47543e0797fa7fb7331d1ff
+    name: imgc-resnet50-onnx-port30137
+    type: application
+    urls:
+    - imgc-resnet50-onnx-port30137-0.1.0.tgz
     version: 0.1.0
   loadtest:
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2024-08-06T20:37:40.270582+07:00"
+    created: "2024-08-06T20:49:50.785479+07:00"
     description: Loadtest application for Sinfonia
-    digest: 35b108e228cda7fe8b627f60d5e4a4c1bc3f509f247876e644b8503fa1259835
+    digest: 630b2559de3d1dbff3106f74b37ad64684f5d21e448a12eddd864de7d2e50c62
     name: loadtest
     type: application
     urls:
@@ -47,9 +80,9 @@ entries:
   loadtest-port30126:
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2024-08-06T20:37:40.271034+07:00"
+    created: "2024-08-06T20:49:50.786009+07:00"
     description: A Helm chart for Kubernetes
-    digest: 849cec647dc0d8b295a166f2cc7e70c84dd02a70685a69200a704f98ad792dd0
+    digest: 75ee9814c0b5926056df67e5f260629844f1a630098bd54cac138f77e5c37bc2
     name: loadtest-port30126
     type: application
     urls:
@@ -58,9 +91,9 @@ entries:
   loadtest-port30127:
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2024-08-06T20:37:40.271488+07:00"
+    created: "2024-08-06T20:49:50.786539+07:00"
     description: A Helm chart for Kubernetes
-    digest: 545b0094e82f33b1214ba496020f75219c29c53600717e3e1684d3c518bf902d
+    digest: bebcd92376d1f17937fd86e2ac46c4875bda8ea6b6bacae6e012428b0b36ac97
     name: loadtest-port30127
     type: application
     urls:
@@ -69,9 +102,9 @@ entries:
   loadtest-port30128:
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2024-08-06T20:37:40.271949+07:00"
+    created: "2024-08-06T20:49:50.786986+07:00"
     description: A Helm chart for Kubernetes
-    digest: a08f8da480e504459ef7be1ba05999ae9c92798d692b0e65ba93c8ea9ee8574b
+    digest: 1e2b3d03aeb4b66ae36d9b3c1cfdcca0f695ab2e4d39ed2c19fecf8648b57f48
     name: loadtest-port30128
     type: application
     urls:
@@ -80,9 +113,9 @@ entries:
   loadtest-port30130:
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2024-08-06T20:37:40.272388+07:00"
+    created: "2024-08-06T20:49:50.787433+07:00"
     description: A Helm chart for Kubernetes
-    digest: 9f53bb2cae000da9f02eecb80307feff502d52339959ddd19b1c1a843e46f91e
+    digest: fae336193cbedffd91c7b96086246f1ca0d91cd505c819654fc005472fd302c8
     name: loadtest-port30130
     type: application
     urls:
@@ -91,9 +124,9 @@ entries:
   loadtest-port30137:
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2024-08-06T20:37:40.272831+07:00"
+    created: "2024-08-06T20:49:50.787871+07:00"
     description: A Helm chart for Kubernetes
-    digest: ac4a019d068aacd9d4e09a74fc413bcf4c7a54e7c5bb2d4daca95a8aa8964a94
+    digest: a6325f1ce2f096ad1cb8e0aace01dc46358ff921e54f8f2b608b23d32bb07626
     name: loadtest-port30137
     type: application
     urls:
@@ -102,7 +135,7 @@ entries:
   loadtest-port30139:
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2024-08-06T20:37:40.273534+07:00"
+    created: "2024-08-06T20:49:50.788937+07:00"
     description: A Helm chart for Kubernetes
     digest: 51f75e2601a70bd8b41fcfcbb3b6bd8aca58c647c533f80be7476d67c08dd9db
     name: loadtest-port30139
@@ -113,12 +146,12 @@ entries:
   sinfonia-tier2:
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2024-08-06T20:37:40.274064+07:00"
+    created: "2024-08-06T20:49:50.789463+07:00"
     description: A Helm chart for Kubernetes
-    digest: 61156b207e38ab46e0681e05c6b8912e1dfb078eb72a8241c50a9c9d0dd230bb
+    digest: ebf2843eb31343127355253f88d86c4cce65de1a2769c92a589505875b54c888
     name: sinfonia-tier2
     type: application
     urls:
     - sinfonia-tier2-0.1.0.tgz
     version: 0.1.0
-generated: "2024-08-06T20:37:40.267523+07:00"
+generated: "2024-08-06T20:49:50.781694+07:00"
